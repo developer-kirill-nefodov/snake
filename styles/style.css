@@ -1,0 +1,84 @@
+body {
+    background-color: #A5511F;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: 'AbstractGroovy';
+    src: url("/fonts/aAbstractGroovy.ttf");
+}
+
+.fontPreload {
+    position: absolute;
+    left: -100px;
+    font-family: AbstractGroovy, serif;
+}
+
+.arr-img {
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+.arrow-block {
+    position: fixed;
+    display: none;
+    bottom: 30px;
+    left: 30px;
+}
+
+@media (max-width: 600px), screen and (max-height: 850px){
+  .arrow-block {
+    display: block;
+  }
+}
+
+.left {
+    position: absolute;
+    transform: rotateY(180deg);
+    bottom: 45px;
+}
+
+.right {
+    position: absolute;
+    bottom: 45px;
+    left: 62px;
+}
+
+.top {
+    position: absolute;
+    bottom: 80px;
+    transform: rotate(-90deg);
+    left: 33px;
+}
+
+.bottom {
+    position: absolute;
+    transform: rotate(-90deg) rotateY(180deg);
+    bottom: 13px;
+    left: 33px;
+}
+
+.open-controller {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    right: 30px;
+
+    color: white;
+}

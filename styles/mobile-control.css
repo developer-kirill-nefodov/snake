@@ -1,0 +1,44 @@
+svg {
+  width: 200px;
+  --d:dodgerblue;
+}
+
+#spot {
+  fill:white;
+  pointer-events:none;
+}
+#arrow {
+  fill:none;
+  stroke:#A5511F;
+  stroke-width:2;
+  pointer-events:none;
+}
+
+#center {
+  fill:#797979;
+  stroke:#A5511F;
+  stroke-width:3;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+
+}
+#center:hover {
+  fill: #A5511F;
+}
+
+#s1,#s3, #s5, #s7 {
+  fill:#3A3A3A;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#s2,#s4,#s6,#s8 {
+  fill:#797979;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+#s1:hover, #s3:hover, #s5:hover, #s7:hover  {
+  fill: var(--d);
+}
